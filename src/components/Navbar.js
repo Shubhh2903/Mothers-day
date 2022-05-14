@@ -39,7 +39,6 @@ const Shop = styled.button`
     width:200px;   
     background-color: #4D9482;
     padding: 10px;
-    
     color:#fff;
     font-family: Mont-Bold;
 `

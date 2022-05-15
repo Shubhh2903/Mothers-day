@@ -22,18 +22,19 @@ function Product() {
             nonummy nibh euismod tincidunt
             <br /> ut laoreet dolore magna aliquam
             <br /> erat volutpat.
+            <br />
+            <Shop>Shop Now</Shop>
           </Details>
-          <Shop>Shop Now</Shop>
         </ProductInfoLeft>
         <ProductImage></ProductImage>
       </Items>
       <Items>
         <ProductImage2></ProductImage2>
         <ProductInfoRight>
-          <ProductTitle style={{ textAlign: "right" }}>
+          <ProductTitleRight>
             Brighten up dull,
             <br /> dreary winter skin.
-          </ProductTitle>
+          </ProductTitleRight>
           <Details>
             Lorem ipsum dolor sit amet, consect
             <br /> etuer adipiscing elit, sed diam
@@ -41,8 +42,9 @@ function Product() {
             nonummy nibh euismod tincidunt
             <br /> ut laoreet dolore magna aliquam
             <br /> erat volutpat.
+            <br />
+            <Shop>Shop Now</Shop>
           </Details>
-          <Shop>Shop Now</Shop>
         </ProductInfoRight>
       </Items>
       <Items>
@@ -58,18 +60,19 @@ function Product() {
             nonummy nibh euismod tincidunt
             <br /> ut laoreet dolore magna aliquam
             <br /> erat volutpat.
+            <br />
+            <Shop>Shop Now</Shop>
           </Details>
-          <Shop>Shop Now</Shop>
         </ProductInfoLeft>
         <ProductImage3></ProductImage3>
       </Items>
       <Items>
         <ProductImage4></ProductImage4>
         <ProductInfoRight>
-          <ProductTitle style={{ textAlign: "right" }}>
+          <ProductTitleRight>
             Brighten up dull,
             <br /> dreary winter skin.
-          </ProductTitle>
+          </ProductTitleRight>
           <Details>
             Lorem ipsum dolor sit amet, consect
             <br /> etuer adipiscing elit, sed diam
@@ -77,8 +80,9 @@ function Product() {
             nonummy nibh euismod tincidunt
             <br /> ut laoreet dolore magna aliquam
             <br /> erat volutpat.
+            <br />
+            <Shop>Shop Now</Shop>
           </Details>
-          <Shop>Shop Now</Shop>
         </ProductInfoRight>
       </Items>
     </Container>
@@ -86,6 +90,23 @@ function Product() {
 }
 
 export default Product;
+const ProductTitleRight = styled.div`
+  font-family: Mont-Bold;
+  font-size: 28px;
+  color: #4d9482;
+  line-height: 1.4;
+  text-align: right;
+  padding: 20px 10px 0 0;
+  @media (max-width: 800px) {
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 1024px) {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+`;
 const ProductInfoRight = styled.div`
   display: flex;
   flex-direction: column;
@@ -116,6 +137,7 @@ const ProductImage3 = styled.div`
     width: 100%;
     margin-top: 30px;
     height: 440px;
+    background-position: center;
   }
 `;
 const ProductImage4 = styled.div`
@@ -132,6 +154,7 @@ const ProductImage4 = styled.div`
     background-color: #fff;
     width: 100%;
     height: 440px;
+    background-position: center;
   }
 `;
 const ProductImage2 = styled.div`
@@ -142,6 +165,8 @@ const ProductImage2 = styled.div`
   flex-shrink: 0;
   width: 500px;
   background-repeat: no-repeat;
+  background-position: center;
+
   @media (max-width: 800px) {
     margin-top: 30px;
     background-color: #fff;
@@ -160,13 +185,13 @@ const ProductImage = styled.div`
     margin-top: 30px;
     width: 100%;
     height: 440px;
+    background-position: center;
   }
-
+  background-position: center;
   background-repeat: no-repeat;
 `;
 const Shop = styled.button`
   margin-top: 30px;
-  margin-left: 25px;
   border: none;
   border-radius: 5px;
   height: 50px;
@@ -188,12 +213,12 @@ const ProductTitle = styled.div`
   color: #4d9482;
   line-height: 1.4;
   text-align: left;
-  padding: 20px 10px 0 30px;
-  @media (max-width:800px) {
+  padding: 20px 10px 0 0;
+  @media (max-width: 800px) {
     align-items: center;
     text-align: center;
   }
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     align-items: center;
     text-align: center;
     margin: 0;
@@ -213,6 +238,8 @@ const ProductInfoLeft = styled.div`
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    display: contents;
   }
 `;
 const Items = styled.div`

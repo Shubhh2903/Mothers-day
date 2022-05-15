@@ -92,6 +92,16 @@ const ProductInfoRight = styled.div`
   align-items: center;
   margin-right: 80px;
   text-align: right;
+  @media (max-width: 800px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 1024px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const ProductImage3 = styled.div`
   background-image: url(${prod3});
@@ -99,8 +109,14 @@ const ProductImage3 = styled.div`
   align-items: flex-end;
   height: 500px;
   width: 500px;
+  flex-shrink: 0;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-top: 30px;
+    height: 440px;
+  }
 `;
 const ProductImage4 = styled.div`
   background-image: url(${prod4});
@@ -108,16 +124,30 @@ const ProductImage4 = styled.div`
   align-items: flex-end;
   height: 500px;
   width: 500px;
+  flex-shrink: 0;
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: 800px) {
+    margin-top: 30px;
+    background-color: #fff;
+    width: 100%;
+    height: 440px;
+  }
 `;
 const ProductImage2 = styled.div`
   background-image: url(${prod2});
   background-size: contain;
   align-items: flex-end;
   height: 500px;
+  flex-shrink: 0;
   width: 500px;
   background-repeat: no-repeat;
+  @media (max-width: 800px) {
+    margin-top: 30px;
+    background-color: #fff;
+    width: 100%;
+    height: 440px;
+  }
 `;
 const ProductImage = styled.div`
   background-image: url(${prod});
@@ -125,6 +155,13 @@ const ProductImage = styled.div`
   align-items: flex-end;
   height: 500px;
   width: 500px;
+  flex-shrink: 0;
+  @media (max-width: 800px) {
+    margin-top: 30px;
+    width: 100%;
+    height: 440px;
+  }
+
   background-repeat: no-repeat;
 `;
 const Shop = styled.button`
@@ -143,7 +180,7 @@ const Shop = styled.button`
 const Details = styled.div`
   font-family: Mont-Light;
   font-size: 14px;
-  padding: 10px 10px 10px 30px;
+  padding-top: 10px;
 `;
 const ProductTitle = styled.div`
   font-family: Mont-Bold;
@@ -152,18 +189,40 @@ const ProductTitle = styled.div`
   line-height: 1.4;
   text-align: left;
   padding: 20px 10px 0 30px;
+  @media (max-width:800px) {
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width:1024px) {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
 `;
 const ProductInfoLeft = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-left: 100px;
+  @media (max-width: 800px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 1024px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const Items = styled.div`
   width: 100%;
   display: flex;
   padding-top: 50px;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 const Container = styled.div`
   display: flex;

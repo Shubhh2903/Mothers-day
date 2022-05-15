@@ -21,9 +21,7 @@ function Navbar() {
             Mother's <span style={{ fontWeight: "Bold" }}>Day</span>
           </Title>
           <SubTitle>Upto 40% Off</SubTitle>
-          <Shop>
-            Shop Now
-          </Shop>
+          <Shop>Shop Now</Shop>
         </Container>
       </Wrapper>
     </>
@@ -32,16 +30,16 @@ function Navbar() {
 
 export default Navbar;
 const Shop = styled.button`
-    margin-top: 30px;
-    border: none;
-    border-radius: 5px;
-    height: 50px;
-    width:200px;   
-    background-color: #4D9482;
-    padding: 10px;
-    color:#fff;
-    font-family: Mont-Bold;
-`
+  margin-top: 30px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  background-color: #4d9482;
+  padding: 10px;
+  color: #fff;
+  font-family: Mont-Bold;
+`;
 const SubTitle = styled.div`
   font-family: Mont-Light;
   font-size: 24px;
@@ -79,6 +77,12 @@ const Nav = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  @media (max-width: 800px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
 `;
 const Logo = styled.div`
   background-image: url(${logo});
@@ -95,4 +99,10 @@ const Wrapper = styled.div`
   background-color: #d6e6ea;
   flex-direction: column;
   padding-bottom: 100px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
 `;
